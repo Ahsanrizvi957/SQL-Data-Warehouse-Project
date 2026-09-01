@@ -176,6 +176,6 @@ BEGIN
 
         RAISE NOTICE '=================================================================';
 
-        RAISE;
+        
 END $$;
 CALL bronze.bronze_load();
