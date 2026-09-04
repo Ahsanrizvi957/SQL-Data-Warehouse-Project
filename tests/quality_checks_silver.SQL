@@ -137,7 +137,7 @@ ORDER BY sls_sales , sls_quantity , sls_price;
 SELECT DISTINCT
 BDATE
 FROM silver.erp_CUST_AZ12
-WHERE BDATE > CURDATE();
+WHERE BDATE > CURRENT_DATE();
 
 -- Checking standardization and consistency
 -- Expectation: no result
