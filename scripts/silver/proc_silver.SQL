@@ -1,3 +1,18 @@
+/*
+=============================================================================
+Script Purpose:
+    This script performs the ETL (Extract, Transform, Load) process to 
+    populate the 'silver' schema tables from the 'bronze' schema.
+	Actions Performed:
+		- Truncates Silver tables.
+		- Inserts transformed and cleansed data from Bronze into Silver tables.
+		- This sript also shows how much time would it take to load data from bronze to silver layer.
+		- I used exception handling in this ETL procedure to make troubleshooting easier.		
+===============================================================================
+*/
+
+
+
 CREATE OR REPLACE PROCEDURE silver.silver_load()
 LANGUAGE plpgsql
 AS $$
